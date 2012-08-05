@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Amadeus</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="{{ STATIC_URL }}assets/css/bootstrap.css" rel="stylesheet">
+    <!-- style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style-->
+    <link href="{{ STATIC_URL }}assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}assets/css/amadeus.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="{{ STATIC_URL }}assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ STATIC_URL }}assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ STATIC_URL }}assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ STATIC_URL }}assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="{{ STATIC_URL }}assets/ico/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  
+  <body>
+  
+    <!-- div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Amadeus</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div--><!--/.nav-collapse -->
+        <!-- /div>
+      </div>
+    </div -->
+
+	<div class="top">
+		<img src="{{ STATIC_URL }}assets/img/header.png" alt="Logotipo Amadeus" />
+	</div>
+
+
+   	<ul class="breadcrumb">
+	  <li>
+	    <a href="#">Inicio</a>
+	  </li>
+	  <li><img src="{{ STATIC_URL }}assets/img/breadcrumb-divider2.png" alt="" /></li>
+	  <li class="active">Cadastro</li>
+	</ul>
+
+    <div class="container">
+
+		<div class="content-leftColumn">
+			<div style="margin-top: 30px; text-align: center;">
+				<img src="{{ STATIC_URL }}assets/img/header.png" alt="Logotipo Amadeus" />
+				<div>Crie uma nova conta Amadeus e entre nessa comunidade de Ensino a Distância.</div>
+			</div>
+			<div style="margin-top: 60px; text-align: center;">
+				<img src="{{ STATIC_URL }}assets/img/android.png" alt="Logotipo Amadeus" />
+				<div>Com uma conta no Amadeus você pode acessar os arquivos do seu curso através do seu computador, notebook ou celular.</div>
+			</div>
+			<div style="margin-top: 60px; text-align: center;">
+				<img src="{{ STATIC_URL }}assets/img/download.png" alt="Logotipo Amadeus" />
+				<div>Faça download e upload de aulas e arquivos através da sua conta no Amadeus.</div>
+			</div>
+		</div>
+
+		<div class="content-centerRightColumn">
+			{% block content %}
+			{% endblock content %}
+		</div>
+		
+    </div> <!-- /container -->
+
+    <footer>
+		<img class="top-logo" src="{{ STATIC_URL }}assets/img/footer.png" alt="Logotipo Amadeus" />
+    	<ul>
+		  <li>
+		    <a href="#">Configuracoes</a> <span class="divider">|</span>
+		  </li>
+		  <li>
+		    <a href="http://amadeus.cin.ufpe.br" target="#">O Projeto</a> <span class="divider">|</span>
+		  </li>
+		  <li>
+		    <a href="http://www.cin.ufpe.br/~ccte/" target="#">Grupo CCTE</a>
+		  </li>
+		</ul>
+    </footer>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{{ STATIC_URL }}assets/js/jquery.js"></script>
+    <script src="{{ STATIC_URL }}assets/js/bootstrap-transition.js"></script>
+    <script src="{{ STATIC_URL }}assets/js/bootstrap-alert.js"></script>
+    <script src="{{ STATIC_URL }}assets/js/bootstrap-modal.js"></script>
+    <script src="{{ STATIC_URL }}assets/js/bootstrap-dropdown.js"></script>
+    <script src="{{ STATIC_URL }}assets/js/bootstrap-scrollspy.js"></script>
+    <script src="{{ STATIC_URL }}assets/js/bootstrap-tab.js"></script>
+    <script src="{{ STATIC_URL }}assets/js/bootstrap-tooltip.js"></script>
+    <script src="{{ STATIC_URL }}assets/js/bootstrap-popover.js"></script>
+    <script src="{{ STATIC_URL }}assets/js/bootstrap-button.js"></script>
+    <script src="{{ STATIC_URL }}assets/js/bootstrap-collapse.js"></script>
+    <script src="{{ STATIC_URL }}assets/js/bootstrap-carousel.js"></script>
+    <script src="{{ STATIC_URL }}assets/js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>
