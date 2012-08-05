@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Cadastrar nova conta</h1>
+    <form class="well" action="." enctype="multipart/form-data" method="POST">
+        {% csrf_token %}
+	    {{ form.non_field_errors }}
+		    <div class="fieldWrapper">
+		        <label for="id_name">Nome completo:</label>
+		        {{ form.name }}
+		        {{ form.name.errors }}
+		    </div>
+		    <div class="fieldWrapper">
+		        <label for="id_email">Email:</label>
+		        {{ form.email }}
+		        {{ form.email.errors }}
+		    </div>
+	    	<hr />
+		    <div class="fieldWrapper">
+		        <label for="id_username">Login:</label>
+		        {{ form.username }}
+		        {{ form.username.errors }}
+		    </div>
+		    <div class="fieldWrapper">
+		        <label for="id_password">Senha:</label>
+		        {{ form.password }}
+		        {{ form.password.errors }}
+		    </div>
+		    <div class="fieldWrapper">
+		        <label for="id_confirmPassword">Confirmacao da Senha:</label>
+		        {{ form.confirmPassword }}
+		        {{ form.confirmPassword.errors }}
+		    </div>
+	    	<hr />
+		    <div class="fieldWrapper">
+		        <label for="id_birthday">Data de Nascimento:</label>
+		        {{ form.birthday }}
+		        {{ form.birthday.errors }}
+		    </div>
+		    <div class="fieldWrapper">
+		        <label for="id_sex" class="labelForRadioGroup">Sexo:</label>
+		        {{ form.sex }}
+		        {{ form.sex.errors }}
+		    </div>
+	    	<hr />
+	    	<div class="formBtnBar">
+	        	<input style="text-align: right" class="btn btn-primary" type="submit" value="Confirmar">
+        	</div>
+    </form>
+{% endblock content %}

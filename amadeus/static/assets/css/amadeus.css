@@ -1,0 +1,127 @@
+.top {
+	text-align: right;
+	padding: 10px 100px 10px 10px;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+.container {
+	padding: 0 0 40px 0;
+}
+
+.breadcrumb {
+	padding: 2px 0 2px 270px;
+}
+
+.breadcrumb li {
+	vertical-align: middle !important;
+	color: #1e4025;
+}
+
+.content-leftColumn {
+	/*position: absolute;*/
+	float: left;
+	width: 200px;
+	color: #999;
+	padding: 15px 80px 0 270px
+}
+
+.content-centerRightColumn {
+	width: auto;
+	margin-left: 200px;
+	margin-right: 0;
+}
+
+footer {
+	margin-top: 50px 0 0 0 !important;
+	height: 110px;
+	
+	background-color: #1e6d36; /* #318e31 verde um pouco mais claro */
+	border-top: solid 4px;
+	border-top-color: #33aa33; 
+	
+	font-size: 11px;
+}
+
+footer .top-logo {
+	position: relative;
+	top: -13px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer ul {
+    margin-left: 0 !important;
+    text-align: center;
+}
+
+footer li {
+	display: inline-block;
+	*display: inline;
+	/* IE7 inline-block hack */
+	
+	*zoom: 1;
+}
+
+footer a {
+	color: #66a866; /*#7eb67e;*/
+	font-family: tahoma;
+}
+
+footer a:hover {
+	color: #a0d0a0;
+	text-decoration: none;
+}	
+
+footer .divider {
+  padding: 0 5px;
+  color: #548854;
+}
+
+.fieldWrapper {
+	margin-top: 20px;
+}
+
+.formBtnBar {
+	text-align: right;
+}
+
+label {
+	text-decoration: bold;
+}
+
+.labelForRadioGroup {
+	display: inline-block;
+	vertical-align: top;
+}
+
+form input {
+	width: 300px;
+}
+
+form ul {	
+	display: inline-block;
+	margin-left: 15px 
+}
+
+form ul.errorlist {	
+	display: block;
+	color: #b22; 
+}
+
+form li {
+	display: block;
+	vertical-align: bottom;
+}
+
+form li input[type=radio]{
+	margin: 0;
+}
+
+/* overwriting bootstrap.css */
+.well {
+	display: table-cell;
+}
+
+

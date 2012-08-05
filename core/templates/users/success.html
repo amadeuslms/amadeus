@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Usuario cadastrado com sucesso!</h1>
+        <h3>{{ usert.name }},</h3>
+        <p>Cadastro realizado em
+        {{ usert.createdAt|date:"d/m/Y" }} as {{ usert.createdAt|date:"H:i:s" }}.
+        </p>
+        <img src="{{ MEDIA_URL }}{{ usert.profileImage }}" />
+{% endblock content %}
